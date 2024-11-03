@@ -1,5 +1,13 @@
 #!/usr/bin/env sh
 
+#   ____ _ _       _     _     _    
+#  / ___| (_)_ __ | |__ (_)___| |_  
+# | |   | | | '_ \| '_ \| / __| __| 
+# | |___| | | |_) | | | | \__ \ |_  
+#  \____|_|_| .__/|_| |_|_|___/\__| 
+#           |_|                     
+# 
+
 # Set variables
 scrDir=$(dirname "$(realpath "$0")")
 source "$scrDir/globalcontrol.sh"
