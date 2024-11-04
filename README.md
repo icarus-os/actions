@@ -20,20 +20,20 @@ CONFIG-SYSTEM-ONLY:
   - systemwide: `/etc/icarus/version`
 
 AMASS:
-- `assets`: both systemwide and user-scoped  [behavior=Amass]
+- `assets`: both systemwide and user-scoped
   - systemwide: `/usr/local/share/icarus/assets`
   - user-scoped: `$HOME/.local/share/icarus/assets`
-- `feathers`: both systemwide and user-scoped [behavior=Amass]
+- `feathers`: both systemwide and user-scoped
   - systemwide: `/usr/local/share/icarus/feathers`   <- `feathers cd --system`
   - user-scoped: `$HOME/.local/share/icarus/feathers` <- `feathers cd`
 
 CONFIG-OVERRIDE:
-- `login`: user-scoped, but with systemwide defaults [behavior=Override]; user writes allowed to the defaults with sudo perms
+- `login`: user-scoped, but with systemwide defaults; user writes allowed to the defaults with sudo perms
   - systemwide: `/etc/icarus/login`
   - user-scoped: `$HOME/.local/share/icarus/login`
 
 USER-ONLY:
-- `cache`: user-scoped only [behavior=ViaUser]
+- `cache`: user-scoped only
   - user-scoped: `$HOME/.local/share/icarus/cache`
 
 OTHER: any folder prefixed with `__` you can probably infer where it will go or it is special
