@@ -14,22 +14,22 @@ Main Components:
 ## Breakdown
 
 CONFIG-SYSTEM-ONLY:
-- `sddm`:  systemwide only; user writes allowed with sudo perms (effect of /etc, so I don't have to do anything) [behavior=Password]
-  - systemwide: `/etc/icarus/sddm`
-- `version`: systemwide only; readonly [behavior=Locked]
-  - systemwide: `/etc/icarus/version`
+- `sddm`:  system-wide only; user writes allowed with sudo perms (effect of /etc, so I don't have to do anything) [behavior=Password]
+  - system-wide: `/etc/icarus/sddm`
+- `version`: system-wide only; readonly [behavior=Locked]
+  - system-wide: `/etc/icarus/version`
 
 AMASS:
-- `assets`: both systemwide and user-scoped
-  - systemwide: `/usr/local/share/icarus/assets`
+- `assets`: both system-wide and user-scoped
+  - system-wide: `/usr/local/share/icarus/assets`
   - user-scoped: `$HOME/.local/share/icarus/assets`
-- `feathers`: both systemwide and user-scoped
-  - systemwide: `/usr/local/share/icarus/feathers`   <- `feathers cd --system`
+- `feathers`: both system-wide and user-scoped
+  - system-wide: `/usr/local/share/icarus/feathers`   <- `feathers cd --system`
   - user-scoped: `$HOME/.local/share/icarus/feathers` <- `feathers cd`
 
 CONFIG-OVERRIDE:
-- `login`: user-scoped, but with systemwide defaults; user writes allowed to the defaults with sudo perms
-  - systemwide: `/etc/icarus/login`
+- `login`: user-scoped, but with system-wide defaults; user writes allowed to the defaults with sudo perms
+  - system-wide: `/etc/icarus/login`
   - user-scoped: `$HOME/.local/share/icarus/login`
 
 USER-ONLY:
